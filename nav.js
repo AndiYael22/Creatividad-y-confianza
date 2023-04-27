@@ -1,7 +1,7 @@
-const menu = document.getElementById('menu');
+const menu = document.getElementById('menu').querySelector('a.inicio');
 const indicador = document.getElementById('indicador');
 const secciones = document.querySelectorAll('.seccion');
-let tamañoIndicador = menu.querySelector('a').offsetWidth;
+tamañoIndicador = menu.clientWidth;
 indicador.style.width = tamañoIndicador + 'px';
 let indexSeccionActiva;
 const observer = new IntersectionObserver((entradas, observer) => {
